@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <style>
+  body {
+      background-image: url(contactbg.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    /* ... your existing CSS styles ... */
+    .contact-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-container h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .contact-form {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .contact-form label {
+      display: block;
+      font-weight: bold;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .contact-form textarea {
+      height: 120px;
+    }
+
+    .contact-form button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #555;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+    }
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .contact-info {
+      margin-bottom: 20px;
+    }
+
+    .social-media {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .social-media li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .social-media li a {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+      transition: transform 0.3s;
+    }
+
+    .social-media li a:hover {
+      transform: scale(1.2);
+    }
+
+    .social-media li a.instagram {
+      background-image: url(ig.png);
+    }
+
+    .social-media li a.facebook {
+      background-image: url(facebook.png);
+    }
+
+    .social-media li a.email {
+      background-image: url(email.png);
+    }
+
+    .social-media li a.whatsapp {
+      background-image: url(tsup.png);
+  </style>
+</head>
+<body>
+  <div class="contact-container">
+    <h1>Contact</h1>
+    <hr>
+
+    <div class="contact-form">
+      <form>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div>
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="contact-info">
+      <h2>Contact Information</h2>
+      <p>Email: <a href="mailto:Bonheuraime8@gmail.com">Bonheuraime8@gmail.com</a></p>
+      <p>Phone: +250787072399</p>
+
+       <h2>Social Media</h2>
+       <hr>
+    <ul class="social-media">
+      <li><a href="https://www.facebook.com/BONHEUR KING" target="_blank" class="facebook"></a></li>
+      <li><a href="https://www.instagram.com/Starboy_Rwanda" target="_blank" class="instagram"></a></li>
+      <li><a href="https://api.whatsapp.com/send?phone=250787072399" target="_blank" class="whatsapp"></a></li>
+      <li><a href="mailto:Bonheuraime8@example.com" class="email"></a></li>
+    </div>
+  </div>
+</body>
+</html>
